@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 index_start = 2*60 - 2*7 #1 April 2020
 index_end = 2*640 - 2*7  #2 Nov 2021 
-N_p = 10.328*(10**6)     #Initial population at t=0 (2 February 2020), using estimates of 1 January 2020 population (WPP UN data)
+N_p = 10.328*(10**6)     #Initial population of Sweden at t=0 (2 February 2020), using estimates of 1 January 2020 population (WPP UN data)
 t_data = np.array(list(pandas.read_csv('t_ready_SVIHRD.csv')['t'][index_start:index_end+1]))
 n = len(t_data)
 dt = 1/2
